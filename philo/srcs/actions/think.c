@@ -1,19 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   philosophers.h                                     :+:      :+:    :+:   */
+/*   think.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdenis <jdenis@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/11 18:45:12 by jdenis            #+#    #+#             */
-/*   Updated: 2023/09/11 18:50:20 by jdenis           ###   ########.fr       */
+/*   Created: 2024/02/02 15:42:00 by jdenis            #+#    #+#             */
+/*   Updated: 2024/02/12 19:02:05 by jdenis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PHILOSOPHERS_H
-# define PHILOSOPHERS_H
+#include "philosophers.h"
 
-# include <stdio.h>
-# include <stdlib.h>
-
-# endif
+void	think(t_philo *philo)
+{
+	print_lock("is thinking", philo);
+	// while (get_current_time() - philo->last_meal < 0.9 * philo->time_to_die)
+	// 	ft_usleep(1, philo);
+}
